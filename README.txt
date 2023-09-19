@@ -1,11 +1,11 @@
 Installation
 *Make sure to install the requirements with pip install -r requirements.txt . 
-Note : Tenseflow needs a 64 bit version of python
+Note : TensorFlow needs a 64 bit version of python (OpenCV requirement)
 
 
 Features / description : 
 *The programm enables the user to make detection on a wished mp4 video 
-and creates a mp4 file in src/stabilisierung back 
+and creates a mp4 file in src/stabilization back 
 
 
 Usage and programm start :
