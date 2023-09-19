@@ -1,0 +1,41 @@
+stages:
+  - test
+
+test:
+  stage: test
+  image: python:3.8
+  script:
+    - apt-get update && apt-get install -y
+        libasound2
+        libgl1
+        libnss3
+        libpulse0
+        libpulse-mainloop-glib0
+        libxcb-icccm4
+        libxcb-image0
+        libxcb-keysyms1
+        libxcb-randr0
+        libxcb-render0
+        libxcb-render-util0
+        libxcb-shape0
+        libxcb-shm0
+        libxcb-sync1
+        libxcb-xfixes0
+        libxcb-xinerama0
+        libxcb-xkb1
+        libxcursor1
+        libxkbcommon0
+        libxkbcommon-x11-0
+        xvfb
+        x11-utils
+    - python3.8 -m venv venv
+    - ./venv/bin/pip install -r requirements.txt
+    - ./venv/bin/pytest
+  coverage: '/\d+\%\s*$/'
+  artifacts:
+    paths:
+      - htmlcov
+    reports:
+      junit: report.xml
+  tags:
+    - docker

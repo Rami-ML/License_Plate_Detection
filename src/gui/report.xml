@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="1" failures="0" hostname="r133080" name="pytest" skipped="0" tests="1" time="2.848" timestamp="2020-07-14T08:17:39.663012"><testcase classname="" name="src.gui.test_gui" time="0.000"><error message="collection failure">ImportError while importing test module &apos;C:\Users\PC\Desktop\pythproj\project\c\src\gui\test_gui.py&apos;.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+test_gui.py:5: in &lt;module&gt;
+    from src.gui.gui import MainWind, OCRDisplay
+E   ModuleNotFoundError: No module named &apos;src&apos;</error></testcase></testsuite></testsuites>

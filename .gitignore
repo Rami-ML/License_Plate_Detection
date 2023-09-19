@@ -1,0 +1,17 @@
+# python files
+*.py[cdo]
+*.egg-info/
+/build/
+/dist/
+/venv/
+
+# testing
+/.coverage
+/.mypy_cache/
+/.pytest_cache/
+/htmlcov/
+/report.xml
+
+# editor configs and caches
+*.swp
+/.vscode
